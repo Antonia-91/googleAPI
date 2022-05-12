@@ -1,0 +1,34 @@
+.landingpage_wrapper{
+  display: flex;
+  //flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  text-align: center;
+  width: 70vw;
+}
+
+.landingpage_section{
+   @include cardStandard;
+  margin: 1rem;
+  //display: flex;
+  width: fit-content;
+  padding: 2rem;
+  flex-direction: column;
+  }
+  
+  .landingpage_section div{
+    box-shadow: 3px 3px 11px #1817177a;
+    display: flex;
+    background-color: white;
+    padding: 2rem;
+    margin: 1rem;
+  }
+  
+  .landingpage_section div h3{
+    cursor: pointer;
+  
+    &:hover{
+      //transform: scale(1.1);
+      color:$hoverColor;
+    }
+  }

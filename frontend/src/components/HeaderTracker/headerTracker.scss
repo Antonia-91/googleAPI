@@ -1,0 +1,32 @@
+/////////////// HEADER TRACKER///////////////////////////
+
+.header_projectName {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+}
+
+.tracker_buttons_holders {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  margin: 2rem;
+}
+
+.tracker_buttons_holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn_tracker {
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  //background-color: aliceblue;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.active {
+  background-color: $buttonGreen;
+}

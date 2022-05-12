@@ -1,0 +1,101 @@
+/// card
+@mixin cardStandard {
+  background-color: white;
+  box-shadow: 3px 3px 11px #1817177a;
+  display: flex;
+  padding: 1rem;
+}
+
+/// select small
+// Bg-color is too light and hard to distinghuish from background. Perhaps darken the color, or add border.
+@mixin select {
+  border-radius: 20px;
+  border: none;
+  padding: 4px 10px;
+  cursor: pointer;
+  width: auto;
+  background-color: $inputBackground;
+
+  // margin: 0;
+}
+
+/// inputs
+//See comment on input bg-color above.
+@mixin inputStandard {
+  padding: 4px 10px;
+  background-color: $inputBackground;
+  border: none;
+  // box-shadow: 3px 3px 11px #18171752;
+  border-radius: 20px;
+  border: 1px solid $PrimaryFontColor;
+}
+
+// buttons
+@mixin delete_btn {
+  //background-color: $buttonOrange;
+  background-color: transparent;
+
+  border-radius: 50%;
+  padding-right: 4px;
+  padding-left: 4px;
+  //color: $PrimaryFontColor;
+  color: $PrimaryFontColor;
+  border: none;
+  border: 1px solid black;
+
+  &:hover {
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+@mixin btn_confirm {
+  cursor: pointer;
+  padding: 4px 10px;
+  background-color: $buttonGreen;
+  color: white;
+  // border: 1px solid $buttonGreen;
+  border: none;
+
+  &:hover {
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+@mixin goBack {
+  cursor: pointer;
+  padding: 4px 10px;
+  background-color: $buttonOrange;
+  color: white;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid black;
+  }
+}
+
+// links
+@mixin links {
+  text-decoration: none;
+  color: $PrimaryFontColor;
+  cursor: pointer;
+
+  &:hover {
+    color: $buttonGreen;
+  }
+}
+
+@mixin btn_cancel {
+  cursor: pointer;
+  padding: 4px 10px;
+  background-color: $buttonOrange;
+  color: white;
+  border: 1px solid $buttonOrange;
+
+  &:hover {
+    border: 1px solid black;
+  }
+}

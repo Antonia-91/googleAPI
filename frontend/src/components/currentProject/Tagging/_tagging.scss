@@ -1,0 +1,354 @@
+//@import "../../../scss/variabler";
+
+//// tagging_wrapper ////
+.tagging_wrapper {
+  max-width: 1200px;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  justify-content: space-around;
+}
+
+//// .new_group ////
+.new_group {
+  @include cardStandard;
+  min-width: 400px;
+  display: inline-block;
+  input {
+    margin: 0.5rem;
+  }
+
+  p {
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+//// edit_group ////
+.edit_group {
+  @include cardStandard;
+  min-width: 400px;
+  display: inline-block;
+  input {
+    margin: 0.5rem;
+  }
+
+  p {
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+////allGroups_section ////
+.allGroups_section {
+  @include cardStandard;
+  flex-direction: column;
+  width: 90vw;
+  padding: 1rem;
+
+  .tab {
+    border-left: 0.5px solid $inputBackground;
+    border-top: 0.5px solid black;
+    border-radius: 5px;
+
+    // -webkit-box-shadow: 0px -4px 7px #e6e6e6;
+    // -moz-box-shadow: 0px -4px 7px #e6e6e6;
+    // box-shadow: 0px -4px 7px #e6e6e6;
+
+    &:hover {
+      box-shadow: -8px -10px 6px -10px rgb(124, 121, 121);
+    }
+  }
+
+  &_title {
+    display: flex;
+    flex-direction: row;
+
+    p {
+      margin: 1rem;
+      //padding:5px
+      //border-left: .5px solid black ;
+    }
+    p:hover {
+      color: $buttonGreen;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  p {
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+///// hide  className on group_section and blackList_section_wrapper
+.hide {
+  display: none;
+}
+
+//// blacklist ////
+.blkList_section_wrapper {
+  display: flex;
+  overflow: scroll;
+  transition: display 2s;
+  margin-top: 1rem;
+  width: 90vw;
+}
+
+.blkList {
+  @include cardStandard;
+
+  margin: 0.1rem;
+  height: fit-content;
+  max-height: 100px;
+  //width: fit-content;
+  width: 90vw;
+  overflow: scroll;
+  display: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+
+  // &:hover {
+  //   border: 0.05px solid $buttonGreen;
+  // }
+
+  &_header {
+    display: flex;
+    width: 85vw;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+}
+
+.blacklist_btn {
+  @include btn_confirm;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  height: fit-content;
+  background-color: $buttonBlue;
+  color: $inputBackground;
+  margin-right: 20px;
+  &:active {
+    outline: $inputBackground solid thin;
+    outline-offset: -4px;
+  }
+}
+
+//// black list  items/  tags
+.blkList_searchterm_wrapper {
+  //border: .5px solid $buttonGreen;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  //background-color: rgba(101, 136, 101, 0.212);
+  // justify-content: center;
+}
+.blkList_searchterm {
+  margin-right: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  min-width: 10rem;
+  max-width: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1px;
+  transition: all 0.6s ease;
+  border-radius: 20px;
+  padding: 0px 4px;
+  background-color: rgba(101, 136, 101, 0.212);
+
+  p {
+    font-size: 12px;
+  }
+}
+
+///// group_section ////
+.allGroups_section_wrapper {
+  display: flex;
+  overflow: scroll;
+  transition: display 2s;
+}
+
+.group_section {
+  @include cardStandard;
+
+  margin: 0.1rem;
+  height: fit-content;
+  max-height: 120px;
+  // min-height: 100px;
+  width: fit-content;
+  min-width: 200px;
+  overflow: scroll;
+  display: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+
+  li {
+    list-style: none;
+  }
+
+  &_header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1px;
+    transition: all 0.6s ease;
+  }
+
+  &_tag {
+    display: flex;
+    flex-direction: row;
+    min-width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1px;
+    transition: all 0.6s ease;
+    border-radius: 20px;
+    border: 0.5px solid transparent;
+    padding: 0px 4px;
+    background-color: rgba(101, 136, 101, 0.212);
+
+    p {
+      font-size: 12px;
+    }
+  }
+  &_tag:hover {
+    border: 0.5px solid $buttonGreen;
+    cursor: pointer;
+    color: white;
+    // font-size: 14px;
+  }
+}
+
+.group_section:hover {
+  cursor: pointer;
+  //border: 1px solid $buttonGreen;
+}
+.searchterm_table_label {
+  text-align: center;
+}
+///// overwiev_section
+.overwiev_section {
+  @include cardStandard;
+  flex-direction: column;
+  width: 90vw;
+  margin: 1rem;
+  overflow: hidden;
+  font-size: 12px;
+
+  &_select_tag {
+    @include select;
+  }
+
+  label {
+    font-size: 12px;
+  }
+  span {
+    //font-size: 12px;
+    text-transform: uppercase;
+    height: min-content;
+  }
+  #select_all_checkbox {
+    margin-right: 6px;
+  }
+  .table_group_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // .searcterm_display_options{
+
+  // }
+  .showAll {
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+    // width: 20%;
+    align-items: center;
+  }
+
+  .showNum {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    .showNum_checkbox {
+      // margin-right: 12px;
+
+      label {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
+.overwiev_section_select_tag {
+  margin-top: 6px;
+}
+.single_line_th {
+  display: flex;
+  align-items: flex-start;
+}
+.searchterm_no_radio {
+  margin-left: 6px;
+}
+.searchterms_display_options {
+  display: flex;
+
+  font-weight: 500;
+  border-bottom: 1px solid $PrimaryFontColor;
+  padding: 30px;
+  padding-left: 0;
+  // text-transform: uppercase;
+  .showAll {
+    margin-right: 2rem;
+  }
+}
+.tag_td {
+  text-align: center;
+}
+.tag_span {
+  padding: 3px;
+  border-radius: 20px;
+  display: inline-block;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+
+  //text-align: center;
+}
+.change:hover {
+  border-radius: 10px;
+  color: $hoverColor;
+  transition: all(2s);
+  background-color: transparent;
+  // border: orange;
+}
+
+//// media query
+@media screen and (max-width: 900px) {
+  .tagging_wrapper {
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+  }
+
+  .new_group {
+    margin: 1rem;
+    width: fit-content;
+  }
+
+  .edit_group {
+    margin: 1rem;
+    width: fit-content;
+  }
+}

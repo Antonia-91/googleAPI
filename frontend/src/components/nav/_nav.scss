@@ -1,0 +1,39 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: $nmBlack;
+  color: white;
+
+  .NordicMornging {
+    color: white;
+    background-color: none;
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+  .NordicMornging_active {
+    background-color: transparent;
+  }
+}
+.nm_logo {
+  width: 100px;
+}
+.nav_logout {
+  display: flex;
+  // flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90px;
+}
+.company_name {
+  display: flex;
+  align-items: center;
+}
+.btn_logout {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,115 @@
+//////////////////////////////////////////////////////
+.discovery_wrapper {
+  flex-direction: column;
+  //width: 90vw;
+  min-width: 400px;
+
+  & span {
+    font-size: 12px;
+  }
+}
+
+.discovery_section {
+  @include cardStandard;
+  width: 90vw;
+  overflow: scroll;
+  display: flex;
+  height: fit-content;
+  //background-color: $sectionBackground;
+  //padding: 2rem;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.add_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: scroll;
+  min-width: 500px;
+
+  textarea {
+    @include inputStandard;
+    min-height: 5rem;
+  }
+}
+
+.type_keyword_input {
+  min-width: 300px;
+  //border: none;
+}
+
+.edit_section form {
+  min-width: 200px;
+  padding: 1rem;
+}
+
+.add-btn {
+  @include btn_confirm;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.edit_section {
+  display: flex;
+  width: 90vw;
+  flex-wrap: wrap;
+}
+.item_section {
+  cursor: pointer;
+  font-size: 10px;
+  border: 1px solid $buttonGreen;
+  border-radius: 20px;
+  padding: 3px;
+  width: fit-content;
+  min-width: 50px;
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  margin: 0.5rem;
+  transition: all 0.6s ease;
+  p {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    // transform: scale(1.1);
+    // color: $hoverColor;
+    border: 1px solid black;
+  }
+  button:hover {
+    background-color: $buttonOrange;
+  }
+}
+
+.generate_section {
+  //margin-top: 2rem;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  button {
+    @include btn_confirm;
+  }
+}
+
+.select_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: $primary-font;
+}
+select {
+  width: 100px;
+  background-color: $inputBackground;
+  border: none;
+}
+
+// .relative_btn{
+//   position: relative;
+//   // margin-right: 10px;
+//   // margin-bottom: 0px;
+// }

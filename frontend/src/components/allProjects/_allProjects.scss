@@ -1,0 +1,131 @@
+.goBack {
+  @include goBack;
+}
+///////// new
+
+.filter_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90vw;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+
+    input {
+      @include inputStandard;
+    }
+}
+
+.filter_section_filter {
+  display: flex;
+
+  p {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.btn {
+  @include btn_confirm;
+}
+
+.allProject_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  align-items: center;
+}
+.allProject_header {
+  text-transform: uppercase;
+  width: 90vw;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.project_wrapper {
+  @include cardStandard;
+  width: 90vw;
+  flex-direction: row;
+  justify-content: space-between;
+  //justify-content: center;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  font-size: 14px;
+
+  button {
+    @include btn_confirm;
+  }
+}
+
+.project_children_div {
+  width: calc(100% / 3);
+}
+.allProject_children_input{
+  margin-right: 0.5rem;
+}
+
+.project_children_div_url {
+  text-align: center;
+}
+
+.project_wrapper_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  div {
+    margin: 0 1rem;
+  }
+}
+
+.project_wrapper_chois {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  label {
+    font-size: 10px;
+  }
+}
+
+/////// old
+// .allProjcet_section {
+//   //@include cardStandard;
+//   overflow: scroll;
+//   display: flex;
+//   height: 80vh;
+//   width: 80vw;
+//   //background-color: $sectionBackground;
+//   padding: 2rem;
+//   //border-radius: 30px;
+//   flex-direction: column;
+// }
+
+// .allProjcet_td {
+//   background-color: white;
+//   box-shadow: 3px 3px 11px #1817177a;
+// }
+
+// table {
+//   // border-collapse: collapse;
+//   width: 100%;
+// }
+
+// tr {
+//   background-color: white;
+//   box-shadow: 3px 3px 11px #1817177a;
+//   margin-bottom: 1rem;
+// }
+// th,
+// td {
+//   border-bottom: 1px solid $PrimaryFontColor;
+//   text-align: left;
+//   padding: 5px;
+//   //width: 100%;
+// }

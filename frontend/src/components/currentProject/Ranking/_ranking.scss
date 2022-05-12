@@ -1,0 +1,85 @@
+.ranking_container {
+    display: flex;
+    position: relative;
+    padding-bottom: 6rem;
+}
+
+.ranking_scraper_summary {
+    overflow: scroll;
+    display: flex;
+    height: 5vh;
+    width: 40vw;
+    background-color: $inputBackground;
+    padding: 2rem;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.ranking_scraper_getstat {
+    overflow: scroll;
+    display: flex;
+    height: 5vh;
+    width: 40vw;
+    background-color: rgba(177, 112, 112, 0.494);;
+    padding: 2rem;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.rank_btn {
+    cursor: pointer;
+    border: none;
+    padding: $spacing-sm;
+    max-width: 100px;
+    background: $buttonGreen;
+    color: $PrimaryFontColor;
+    margin-left: $spacing-sm;
+    border-radius: $spacing-md;
+    outline: none;
+    transition: all 0.6s ease;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+}
+
+.ranking_dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.ranking_scraper_getstat:hover .ranking_dropdown {
+    display: block;
+    background-color: $inputBackground;
+}
+
+.ranking_scraper_summary:hover .ranking_dropdown {
+    display: block;
+    background-color: $inputBackground;
+}
+
+.ranking_container_result {
+    overflow: scroll;
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    background-color: white;
+    padding: 2rem;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+table {
+    width: 100%;
+  }
+  th,
+  td {
+    border-bottom: 1px solid $PrimaryFontColor;
+    text-align: left;
+    padding: 5px;
+  }

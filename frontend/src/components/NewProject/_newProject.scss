@@ -1,0 +1,194 @@
+.new-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.settings-form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.form-cards-wrapper {
+  display: flex;
+  // justify-content: space-around;
+  width: 100%;
+}
+.general_settings {
+  margin-left: 5%;
+  margin-right: auto;
+}
+.competitors_settings {
+  margin-right: 5%;
+  margin-left: auto;
+}
+.new-project .card {
+  @include cardStandard;
+  flex-direction: column;
+  min-width: 35%;
+  padding: 40px;
+  // margin-bottom: 60px;
+}
+.new-project h1 {
+  text-transform: uppercase;
+  margin: 50px 0;
+  font-size: 3rem;
+  font-weight: 300;
+}
+.new-project h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2rem;
+  margin: $spacing-md 0;
+  font-weight: 300;
+}
+.new-project h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: $spacing-lg;
+  font-weight: 300;
+}
+.new-project h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.new-project label {
+  margin: $spacing-md 0;
+  display: flex;
+  justify-content: space-between;
+  height: $md-font;
+  font-size: 1rem;
+  align-items: center;
+}
+.settings_input {
+  width: 40%;
+}
+
+// .new-project select {
+//     @include select;
+//     // border-radius: 20px;
+//     // padding: 0 10px;
+//     // cursor: pointer;
+//     // width: auto;
+//     // // margin: 0;
+
+// }
+
+.radio-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //font-size: .5rem;
+   
+  label{
+    font-size: .5rem;
+  }
+}
+.new-competitor {
+  display: flex;
+  flex-direction: column;
+}
+.competitor-input {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.btn_add_competitor {
+  padding: 5px;
+  width: 60px;
+  background-color: $buttonGreen;
+  color: $PrimaryFontColor;
+}
+.competitors-list {
+  margin-top: 50px;
+}
+.competitors-list-labels {
+  width: 100%;
+  display: flex;
+}
+.competitors-list-labels h4 {
+  width: calc(100% / 3);
+}
+.competitor-label-url {
+  text-align: center;
+}
+.competitor-label-delete {
+  text-align: right;
+}
+
+.new-project li {
+  display: flex;
+  list-style-type: none;
+}
+.new-project li div {
+  width: calc(100% / 3);
+}
+
+.competitor-list-delete {
+  text-align: right;
+  cursor: pointer;
+}
+.tagging-checkbox {
+  padding: 0;
+  width: auto;
+  transform: scale(1.5);
+  transform-origin: right;
+  cursor: pointer;
+}
+.form-button-wrapper {
+  // margin-bottom: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  // margin-top: 60px;
+  margin: 40px;
+  button {
+    margin-right: 5%;
+    font-size: 1rem;
+    padding: 10px 40px;
+  }
+}
+
+.change:hover {
+    border-radius: 10px;
+    color: $hoverColor;
+    transition: all(2s);
+    background-color: transparent;
+    // border: orange;
+  }
+.btn_go_back {
+  margin-bottom: 30px;
+}
+.export {
+  margin-bottom: 30px;
+  width: 80%;
+}
+// .form-button {
+//     width: 200px;
+//     padding: 15px 0;
+//     font-size: 1.5rem;
+//     color: $PrimaryFontColor;
+// }
+// .cancel-button {
+//     background-color: $buttonOrange;
+// }
+// .submit-button {
+//     background-color: $buttonGreen;
+// }
+// .new-project input {
+//     width: 30%;
+// }
+
+// @media screen and (max-width: 1400px) {
+//     .form-cards-wrapper {
+//         flex-direction: column;
+//         align-items: center;
+//     }
+//     .card {
+//         width: 65%;
+//         // margin-bottom: $spacing-lg;
+
+//     }
+// }

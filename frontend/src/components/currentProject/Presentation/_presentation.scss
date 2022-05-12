@@ -1,0 +1,239 @@
+// color: #ebdbd5;
+// background-color: #c3826f;
+
+.presentation_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: $presentationHead;
+  }
+  p,
+  ul,
+  li {
+    font-family: sourse San pro;
+  }
+}
+
+.presentation_slider {
+  // width: 80vw;
+  width: 800px;
+  // border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  min-height: 400px;
+  max-height: 600px;
+  align-items: center;
+
+  background-color: #c3836f4d;
+
+  margin-bottom: 2rem;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: $presentationHead;
+    padding: 1rem;
+  }
+}
+
+//// chart div holder
+.chart_div {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  display: flex;
+  height: 70%;
+}
+
+//// aside (  background-color: #c3826f; )
+.aside_div {
+  display: flex;
+  flex-direction: column;
+  background-color: #c3826f;
+  width: 40%;
+  min-height: 400px;
+  max-height: 600px;
+  color: #ebdbd5;
+  margin-right: 0.5rem;
+  //text-align: center;
+
+  .paragaph {
+    margin-top: 1rem;
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .mainText {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30%;
+
+    ul {
+      list-style: none;
+    }
+
+    span {
+      font-style: oblique;
+      font-size: 30px;
+      font-weight: 100;
+    }
+  }
+}
+
+//// slider without chart comopnent
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &_header {
+    display: flex;
+    justify-content: center;
+    background-color: #c3826f;
+    padding: 2rem;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    color: #ebdbd5;
+  }
+
+  .slider_data_enhet {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px;
+    overflow: scroll;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      font-size: 10px;
+    }
+
+    .mini_box {
+      margin: 2rem;
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      h4 {
+        margin: 0.5rem;
+      }
+
+      ul {
+        list-style: none;
+        font-size: 12px;
+      }
+    }
+    .circle_unit {
+      background-color: aliceblue;
+      width: 60px;
+      height: 100px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle_catecory {
+      background-color: aliceblue;
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+//// slider with flex_box
+.flex_box {
+  font-size: 16px;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 300px;
+  overflow: scroll;
+
+  .flex_box_textHolder {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-weight: 800;
+    }
+  }
+}
+.column_box {
+  display: flex;
+  flex-direction: column;
+
+  .column_box_procent {
+    padding: 0.5rem;
+    background-color: #c3826f;
+    width: 40px;
+    margin-bottom: 0.5rem;
+  }
+
+  .column_box_tag {
+    padding: 0.5rem;
+    background-color: #c3826f;
+    width: 80px;
+    margin-bottom: 0.5rem;
+    overflow: scroll;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+}
+
+////
+
+// .slider_aside {
+//   display: flex;
+//   flex-wrap: wrap;
+//   // justify-content: space-between;
+//   margin: 0.5rem;
+
+//   .mini_box {
+//     width: 50px;
+//     border-radius: 20%;
+//     border: 1px solid black;
+//     margin: 0.5rem;
+//     padding: 0.5rem;
+//     font-size: 12px;
+//     justify-content: center;
+//     text-align: center;
+
+//     h4 {
+//       font-size: 12px;
+//     }
+//     li {
+//       list-style: none;
+//       text-align: center;
+//     }
+//   }
+// }

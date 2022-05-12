@@ -1,0 +1,109 @@
+@import "./variabler";
+@import "./mixins";
+
+@import "../components/HeaderTracker/headerTracker.scss";
+@import ".././components/login/login";
+@import ".././components/landingPage/landingPage";
+@import ".././components/nav/nav";
+@import ".././components/allProjects/allProjects";
+@import ".././components/NewProject/newProject";
+@import "../components/currentProject/Summary/summary";
+
+@import ".././components/currentProject/discovery/discovery";
+@import ".././components/currentProject/Presentation/Presentation";
+@import ".././components/currentProject/Ranking/ranking";
+@import ".././components/currentProject/tagging/tagging";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #020202;
+  font-size: $md-font;
+  height: 100vh;
+  font-family: $primary-font;
+  background-color: $inputBackground;
+  min-height: 100vh;
+}
+
+// main
+.main {
+  min-height: 100vh;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+// header
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  //width: ;
+
+  h1 {
+    padding: 1rem;
+  }
+
+  h4 {
+    padding: 1rem;
+  }
+}
+
+//select
+select {
+  @include select;
+}
+
+// input
+input {
+  @include inputStandard;
+}
+
+// links
+.links {
+  @include links;
+}
+
+// buttons
+.delete_btn {
+  @include delete_btn;
+}
+.btn_cancel {
+  @include btn_cancel;
+}
+
+.btn_confirm {
+  @include btn_confirm;
+}
+.card {
+  @include cardStandard;
+}
+
+span {
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.2rem;
+}

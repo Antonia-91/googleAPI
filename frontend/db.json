@@ -1,0 +1,39 @@
+{
+  "groups": [
+    {
+      "groupName": "distans utbildning",
+      "tag": [
+        "tag1",
+        "tag2",
+        "tag3"
+      ],
+      "id": 1
+    },
+    {
+      "groupName": "frontend",
+      "tag": [
+        "tag",
+        "tGGGG",
+        "tagg",
+        "tag",
+        "tGGGG",
+        "tagg"
+      ],
+      "id": 2
+    },
+    {
+      "groupName": "new group",
+      "tag": [
+        "new tag"
+      ],
+      "id": 3
+    },
+    {
+      "groupName": "another group",
+      "tag": [
+        "tag"
+      ],
+      "id": 4
+    }
+  ]
+}

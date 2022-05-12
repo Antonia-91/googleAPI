@@ -1,0 +1,14 @@
+.login_wrapper{
+    background-color: $sectionBackground;
+    padding: 2rem;
+    border-radius: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    //justify-content: wrap;
+    align-items: center;
+  }
+  .login_wrapper h1{
+    padding-bottom: 1rem;
+  
+  }
